@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.stimik.khs">
+
+    <application
+        android:name=".application.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //admin
+        <activity android:name=".activities.admin.MasterJurusanActivity"></activity>
+        <activity android:name=".activities.admin.MasterMahasiswaJurusanActivity"></activity>
+        <activity android:name=".activities.admin.MasterMahasiswaActivity"></activity>
+        <activity android:name=".activities.admin.MasterDosenActivity"></activity>
+        <activity android:name=".activities.admin.MasterMatkulActivity"></activity>
+        <activity android:name=".activities.admin.MasterMatkulSemesterActivity"></activity>
+
+        //mahasiswa
+        <activity android:name=".activities.mahasiswa.MatkulAmbilActivity"></activity>
+        <activity android:name=".activities.mahasiswa.MatkulSemesterActivity"></activity>
+        <activity android:name=".activities.mahasiswa.StudyResultActivity"></activity>
+        <activity android:name=".activities.mahasiswa.StudySemesterActivity"></activity>
+        <activity android:name=".activities.mahasiswa.TranskripResultActivity"></activity>
+        <activity android:name=".activities.mahasiswa.DownloadKHSActivity"></activity>
+        //dosen
+        <activity android:name=".activities.dosen.InputNilaiActivity"></activity>
+        <activity android:name=".activities.dosen.DosenMatkulActivity"></activity>
+
+        //home
+        <activity android:name=".MainDosenActivity"></activity>
+        <activity android:name=".MainMahasiswaActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".activities.LoginActivity"></activity>
+    </application>
+
+</manifest>

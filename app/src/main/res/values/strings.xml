@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KHS</string>
+
+    <string-array name="array_gender">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="array_nilai">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+    </string-array>
+</resources>
