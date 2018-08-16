@@ -14,6 +14,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.stimik.khs.activities.ProfilActivity;
 import id.stimik.khs.activities.admin.MasterMatkulSemesterActivity;
 import id.stimik.khs.activities.dosen.DosenMatkulActivity;
 import id.stimik.khs.data.Session;
@@ -79,7 +80,7 @@ public class MainDosenActivity extends AppCompatActivity {
                 startActivity(new Intent(this, DosenMatkulActivity.class));
                 break;
             case R.id.btn_profil:
-//                startActivity(new Intent(this, DosenMatkulActivity.class));
+                startActivity(new Intent(this, ProfilActivity.class));
                 break;
         }
     }

@@ -40,6 +40,7 @@
         <activity android:name=".MainMahasiswaActivity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".activities.LoginActivity"></activity>
+        <activity android:name=".activities.ProfilActivity"></activity>
     </application>
 
 </manifest>

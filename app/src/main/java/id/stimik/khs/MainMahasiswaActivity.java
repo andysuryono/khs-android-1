@@ -14,6 +14,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.stimik.khs.activities.ProfilActivity;
 import id.stimik.khs.activities.mahasiswa.MatkulAmbilActivity;
 import id.stimik.khs.activities.mahasiswa.MatkulSemesterActivity;
 import id.stimik.khs.activities.mahasiswa.StudySemesterActivity;
@@ -89,6 +90,7 @@ public class MainMahasiswaActivity extends AppCompatActivity {
                 startActivity(new Intent(this, TranskripResultActivity.class));
                 break;
             case R.id.btn_mahasiswa:
+                startActivity(new Intent(this, ProfilActivity.class));
                 break;
         }
     }
