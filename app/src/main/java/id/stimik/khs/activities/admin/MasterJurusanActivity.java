@@ -11,6 +11,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import com.androidnetworking.AndroidNetworking;
@@ -84,6 +85,9 @@ public class MasterJurusanActivity extends AppCompatActivity {
                 loadData();
             }
         });
+
+        btnAddData.setVisibility(View.GONE);
+
     }
 
     private void loadData() {

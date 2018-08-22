@@ -22,6 +22,8 @@ import com.androidnetworking.interfaces.ParsedRequestListener;
 
 import org.json.JSONObject;
 
+import java.text.DecimalFormat;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -142,7 +144,8 @@ public class StudyResultActivity extends AppCompatActivity {
                 if (((StudyResponse) response).getData() != null && ((StudyResponse) response).getData().size() != 0) {
                     etJumlahSks.setText(((StudyResponse) response).getJumlahSks() + " SKS");
                     etSisaSks.setText(((StudyResponse) response).getSisa_sks() + " SKS");
-                    etIps.setText(((StudyResponse) response).getIpk() + "");
+                    DecimalFormat decimalFormat = new DecimalFormat("#.00");
+                    etIps.setText(decimalFormat.format(((StudyResponse) response).getIpk())+"");
                     etJumlahMutu.setText(((StudyResponse) response).getJumlahMutu() + "");
                     adapter.swap(((StudyResponse) response).getData());
                     recyclerView.setAdapter(adapter);

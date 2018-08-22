@@ -148,7 +148,7 @@ public class DialogMahasiswa extends DialogFragment {
     void adddData() {
         openDialog();
         AndroidNetworking.post(MAHASISWA)
-                .addBodyParameter("id_semester", String.valueOf(id_jurusan))
+                .addBodyParameter("id_jurusan", String.valueOf(id_jurusan))
                 .addBodyParameter("nama", etNama.getText().toString())
                 .addBodyParameter("nim", etNim.getText().toString())
                 .addBodyParameter("alamat", etAlamat.getText().toString())
